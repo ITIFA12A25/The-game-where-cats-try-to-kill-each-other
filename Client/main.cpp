@@ -1,4 +1,7 @@
 #include "client.h"
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+#include <QQuickStyle>
 
 #include <QApplication>
 
