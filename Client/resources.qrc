@@ -9,5 +9,6 @@
         <file>resources/white_arrow.png</file>
         <file>resources/info.png</file>
         <file>resources/play.png</file>
+        <file>resources/placeholder.jpg</file>
     </qresource>
 </RCC>

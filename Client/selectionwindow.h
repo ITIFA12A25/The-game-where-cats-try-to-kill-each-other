@@ -29,6 +29,7 @@ private:
     Ui::SelectionWindow *ui;
     QPushButton* selectedButton = nullptr;
     QString originalStyleSheet;
+    const char* selectedCat = nullptr;
 };
 
 #endif
