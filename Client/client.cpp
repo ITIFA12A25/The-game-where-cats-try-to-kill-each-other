@@ -1,3 +1,4 @@
+#pragma once
 #include "client.h"
 #include "ui_client.h"
 #include "selectionwindow.h"
@@ -7,6 +8,8 @@
 #include <sys/socket.h>
 #include <unistd.h>
 #include <arpa/inet.h>
+#include "ui_information.h"
+#include "information.cpp"
 
 client::client(QWidget *parent)
     : QMainWindow(parent)
@@ -63,3 +66,12 @@ void client::on_pushButton_2_clicked()
 
     this->close();
 }
+
+void client::on_pushButton_3_clicked()
+{
+    Information *information = new Information();
+    std::string text = "Press \"Play\" to select your cat and join the fray \n Press \"🕐\" to view a replay of the last match";
+    information->setInfoText(text);
+    information->show();
+}
+

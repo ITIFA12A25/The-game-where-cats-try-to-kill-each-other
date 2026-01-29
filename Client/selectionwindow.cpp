@@ -1,7 +1,10 @@
+#pragma once
 #include "selectionwindow.h"
 #include "ui_selectionwindow.h"
 #include "client.h"
 #include "ui_client.h"
+#include "information.h"
+#include "ui_information.h"
 
 SelectionWindow::SelectionWindow(QWidget *parent)
     : QWidget(parent)
@@ -23,6 +26,13 @@ void SelectionWindow::on_pushButton_clicked()
     this->close();
 }
 
+void SelectionWindow::on_pushButton_2_clicked()
+{
+    Information *information = new Information();
+    std::string text = "Press \"<\" to return to main menu \n Select a cat by pressing on it \n Press \"Start\" to join the fray";
+    information->setInfoText(text);
+    information->show();
+}
 
 void SelectionWindow::on_pushButton_3_clicked()
 {
@@ -98,7 +108,6 @@ void SelectionWindow::on_pushButton_5_clicked()
     }
 }
 
-
 void SelectionWindow::on_pushButton_6_clicked()
 {
     // Start Game
@@ -109,4 +118,3 @@ void SelectionWindow::on_pushButton_6_clicked()
         // Info popup saying "Please select a cat!"
     }
 }
-
