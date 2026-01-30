@@ -3,6 +3,7 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include "clienthandler.h"
 
 using namespace std;
 
@@ -41,6 +42,9 @@ int main() {
         recv(clientSocket, buffer, sizeof(buffer), 0);
         cout << "Message from client: " << buffer << endl;
 
+        ClientHandler handler;
+        const char* response = handler.handleData(buffer);
+        send(clientSocket, response, strlen(response), 0);
         close(clientSocket);
     }
 

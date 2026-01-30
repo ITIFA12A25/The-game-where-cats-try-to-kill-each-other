@@ -7,6 +7,7 @@
 #include <sys/socket.h>
 #include <unistd.h>
 #include <arpa/inet.h>
+#include "responsehandler.h"
 
 client::client(QWidget *parent)
     : QMainWindow(parent)
@@ -48,6 +49,17 @@ void client::sendData(const char* message) {
         std::cerr << "Error sending message" << std::endl;
     } else {
         std::cout << "Message sent: " << message << std::endl;
+
+        char buffer[1024] = {0};
+        ssize_t bytesRead = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
+        if (bytesRead == -1) {
+            std::cerr << "No Response received." << std::endl;
+        } else {
+            ResponseHandler handler;
+            buffer[bytesRead] = '\0';
+            std::cout << "Response received: " << buffer << std::endl;
+            handler.handleResponse(buffer);
+        }
     }
 
     ::close(clientSocket);
@@ -55,9 +67,6 @@ void client::sendData(const char* message) {
 
 void client::on_pushButton_2_clicked()
 {
-    const char* message = "start";
-    sendData(message);
-
     SelectionWindow *selectionWindow = new SelectionWindow();
     selectionWindow->show();
 
