@@ -2,6 +2,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
+
 #include <QApplication>
 
 int main(int argc, char *argv[])

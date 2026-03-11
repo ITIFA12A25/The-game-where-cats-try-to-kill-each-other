@@ -15,6 +15,12 @@ public:
     explicit Gamewindow(QWidget *parent = nullptr);
     ~Gamewindow();
 
+public slots:
+    void changeCat(int place, std::string catName);
+
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Gamewindow *ui;
 };

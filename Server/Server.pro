@@ -9,9 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    clienthandler.cpp \
     main.cpp
 
-HEADERS +=
+HEADERS += \
+    clienthandler.h
+    cat.cpp \
+    chonker.cpp \
+    feral.cpp \
+    main.cpp \
+    zoomies.cpp \
 
 FORMS +=
 

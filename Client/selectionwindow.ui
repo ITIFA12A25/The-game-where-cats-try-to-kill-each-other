@@ -96,7 +96,7 @@ Try To Kill Each Other</string>
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/cats/resources/katze3.png);
+    <string notr="true">border-image: url(:/cats/resources/Chonker.png);
 </string>
    </property>
    <property name="text">
@@ -133,9 +133,9 @@ Try To Kill Each Other</string>
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>120</y>
-     <width>350</width>
+     <x>50</x>
+     <y>130</y>
+     <width>340</width>
      <height>350</height>
     </rect>
    </property>
@@ -148,7 +148,7 @@ Try To Kill Each Other</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/cats/resources/katze2.png);</string>
+    <string notr="true">border-image: url(:/cats/resources/Zoomies.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -161,7 +161,7 @@ Try To Kill Each Other</string>
    <property name="geometry">
     <rect>
      <x>780</x>
-     <y>190</y>
+     <y>130</y>
      <width>350</width>
      <height>350</height>
     </rect>
@@ -173,7 +173,7 @@ Try To Kill Each Other</string>
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/cats/resources/katze1.png);</string>
+    <string notr="true">border-image: url(:/cats/resources/Feral.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -443,7 +443,7 @@ Try To Kill Each Other</string>
   <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>540</x>
      <y>650</y>
      <width>125</width>
      <height>125</height>
@@ -528,6 +528,32 @@ border-radius: 30px;</string>
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>670</y>
+     <width>200</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Player 1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>670</y>
+     <width>200</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Player 2</string>
+   </property>
+  </widget>
   <zorder>label_14</zorder>
   <zorder>label_17</zorder>
   <zorder>label_16</zorder>
@@ -551,6 +577,8 @@ border-radius: 30px;</string>
   <zorder>label_12</zorder>
   <zorder>label_13</zorder>
   <zorder>pushButton_6</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>pushButton_8</zorder>
  </widget>
  <resources/>
  <connections/>
