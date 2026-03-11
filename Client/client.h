@@ -23,7 +23,6 @@ public:
     void listenForResponses(int clientSocket);
     std::string getLatestResponse();
 
-
 private slots:
     void on_pushButton_2_clicked();
 

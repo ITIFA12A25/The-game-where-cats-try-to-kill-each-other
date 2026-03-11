@@ -9,7 +9,6 @@
 #include <sys/socket.h>
 #include <unistd.h>
 #include <arpa/inet.h>
-#include "responsehandler.h"
 
 int SERVER_PORT = 8080;
 
@@ -50,28 +49,11 @@ void client::sendData(const char* data, int port) {
         return;
     }
 
-<<<<<<< HEAD
-    ssize_t bytesSent = send(clientSocket, message, strlen(message), 0);
+    ssize_t bytesSent = send(clientSocket, data, strlen(data), 0);
     if (bytesSent == -1) {
         std::cerr << "Error sending message" << std::endl;
     } else {
-        std::cout << "Message sent: " << message << std::endl;
-
-        char buffer[1024] = {0};
-        ssize_t bytesRead = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
-        if (bytesRead == -1) {
-            std::cerr << "No Response received." << std::endl;
-        } else {
-            ResponseHandler handler;
-            buffer[bytesRead] = '\0';
-            std::cout << "Response received: " << buffer << std::endl;
-            handler.handleResponse(buffer);
-        }
-=======
-    if (strcmp(data, "") != 0) {
-        send(clientSocket, data, strlen(data), 0);
         std::cout << "Message sent: " << data << std::endl;
->>>>>>> aa483a3 (Katzenklassen implementieren)
     }
 
     char buffer[1024];
@@ -88,18 +70,13 @@ void client::sendData(const char* data, int port) {
     ::close(clientSocket);
 }
 
-<<<<<<< HEAD
-void client::on_pushButton_2_clicked()
-{
-=======
 std::string client::getLatestResponse() {
     return response;
 }
 
 void client::on_pushButton_2_clicked() {
->>>>>>> aa483a3 (Katzenklassen implementieren)
-    SelectionWindow *selectionWindow = new SelectionWindow();
-    selectionWindow->show();
-
+    SelectionWindow *selectionwindow = new SelectionWindow();
     this->close();
+    selectionwindow->show();
 }
+

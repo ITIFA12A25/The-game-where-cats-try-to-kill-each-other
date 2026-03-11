@@ -14,13 +14,11 @@ SOURCES += \
     gamewindow.cpp \
     main.cpp \
     client.cpp \
-    responsehandler.cpp \
     selectionwindow.cpp
 
 HEADERS += \
     client.h \
     gamewindow.h \
-    responsehandler.h \
     selectionwindow.h
 
 FORMS += \
