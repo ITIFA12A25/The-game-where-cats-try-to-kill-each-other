@@ -19,17 +19,17 @@ public:
     ~SelectionWindow();
 
 private slots:
-    void on_pushButton_clicked();
-    void on_pushButton_3_clicked();
-    void on_pushButton_4_clicked();
-    void on_pushButton_5_clicked();
-    void on_pushButton_6_clicked();
+    void on_backButton_clicked();
+    void on_zoomiesButton_clicked();
+    void on_chonkerButton_clicked();
+    void on_feralButton_clicked();
+    void on_playButton_clicked();
 
 private:
     Ui::SelectionWindow *ui;
     QPushButton* selectedButton = nullptr;
     QString originalStyleSheet;
-    const char* selectedCat = nullptr;
+    std::string selectedCat = "";
 };
 
 #endif

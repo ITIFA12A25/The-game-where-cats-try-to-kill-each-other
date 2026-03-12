@@ -1,13 +1,13 @@
 <RCC>
     <qresource prefix="/cats">
         <file>resources/catest.jpeg</file>
-        <file>resources/katze1.png</file>
-        <file>resources/katze2.png</file>
-        <file>resources/katze3.png</file>
         <file>resources/darkalley.png</file>
         <file>resources/cloudyskie.jpg</file>
         <file>resources/white_arrow.png</file>
         <file>resources/info.png</file>
         <file>resources/play.png</file>
+        <file>resources/Feral.png</file>
+        <file>resources/Zoomies.png</file>
+        <file>resources/Chonker.png</file>
     </qresource>
 </RCC>

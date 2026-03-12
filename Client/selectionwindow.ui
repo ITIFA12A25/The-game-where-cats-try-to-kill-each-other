@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="gameTitle">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -48,7 +48,7 @@
 Try To Kill Each Other</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="backButton">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -64,7 +64,7 @@ Try To Kill Each Other</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="infoButton">
    <property name="geometry">
     <rect>
      <x>990</x>
@@ -80,7 +80,7 @@ Try To Kill Each Other</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="chonkerButton">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -96,7 +96,7 @@ Try To Kill Each Other</string>
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/cats/resources/katze3.png);
+    <string notr="true">border-image: url(:/cats/resources/Chonker.png);
 </string>
    </property>
    <property name="text">
@@ -130,12 +130,12 @@ Try To Kill Each Other</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="zoomiesButton">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>120</y>
-     <width>350</width>
+     <x>50</x>
+     <y>130</y>
+     <width>340</width>
      <height>350</height>
     </rect>
    </property>
@@ -148,7 +148,7 @@ Try To Kill Each Other</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/cats/resources/katze2.png);</string>
+    <string notr="true">border-image: url(:/cats/resources/Zoomies.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -157,11 +157,11 @@ Try To Kill Each Other</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="feralButton">
    <property name="geometry">
     <rect>
      <x>780</x>
-     <y>190</y>
+     <y>130</y>
      <width>350</width>
      <height>350</height>
     </rect>
@@ -173,7 +173,7 @@ Try To Kill Each Other</string>
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/cats/resources/katze1.png);</string>
+    <string notr="true">border-image: url(:/cats/resources/Feral.png);</string>
    </property>
    <property name="text">
     <string/>
@@ -182,7 +182,7 @@ Try To Kill Each Other</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="labelZoomies">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -205,7 +205,7 @@ Try To Kill Each Other</string>
     <string>Zoomies</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="labelChonker">
    <property name="geometry">
     <rect>
      <x>500</x>
@@ -228,7 +228,7 @@ Try To Kill Each Other</string>
     <string>Chonker</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="labelFeral">
    <property name="geometry">
     <rect>
      <x>880</x>
@@ -251,7 +251,7 @@ Try To Kill Each Other</string>
     <string>Feral</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="healthZoomies">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -269,10 +269,10 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Health: 8hp</string>
+    <string>Health: 50hp</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="damageZoomies">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -290,10 +290,10 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Damage: 4</string>
+    <string>Damage: 6</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="speedZoomies">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -314,7 +314,7 @@ Try To Kill Each Other</string>
     <string>Speed: 50 (Dodge%)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="QLabel" name="speedChonker">
    <property name="geometry">
     <rect>
      <x>510</x>
@@ -332,10 +332,10 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Speed: 15 (Dodge%)</string>
+    <string>Speed: 5 (Dodge%)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QLabel" name="healthChonker">
    <property name="geometry">
     <rect>
      <x>510</x>
@@ -353,10 +353,10 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Health: 15hp</string>
+    <string>Health: 100hp</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
+  <widget class="QLabel" name="damageChonker">
    <property name="geometry">
     <rect>
      <x>510</x>
@@ -374,10 +374,10 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Damage: 4</string>
+    <string>Damage: 5</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_11">
+  <widget class="QLabel" name="speedFeral">
    <property name="geometry">
     <rect>
      <x>840</x>
@@ -395,10 +395,10 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Speed: 25 (Dodge%)</string>
+    <string>Speed: 20 (Dodge%)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_12">
+  <widget class="QLabel" name="healthFeral">
    <property name="geometry">
     <rect>
      <x>840</x>
@@ -416,10 +416,10 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Health: 10hp</string>
+    <string>Health: 65hp</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_13">
+  <widget class="QLabel" name="damageFeral">
    <property name="geometry">
     <rect>
      <x>840</x>
@@ -437,13 +437,13 @@ Try To Kill Each Other</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Damage: 6</string>
+    <string>Damage: 7</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="playButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
+     <x>540</x>
      <y>650</y>
      <width>125</width>
      <height>125</height>
@@ -461,7 +461,7 @@ Try To Kill Each Other</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_14">
+  <widget class="QLabel" name="background">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -477,7 +477,7 @@ Try To Kill Each Other</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_15">
+  <widget class="QLabel" name="backgroundChonker">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -494,7 +494,7 @@ border-radius: 30px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_16">
+  <widget class="QLabel" name="backgroundFeral">
    <property name="geometry">
     <rect>
      <x>820</x>
@@ -511,7 +511,7 @@ border-radius: 30px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_17">
+  <widget class="QLabel" name="backgroundZoomies">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -528,29 +528,29 @@ border-radius: 30px;</string>
     <string/>
    </property>
   </widget>
-  <zorder>label_14</zorder>
-  <zorder>label_17</zorder>
-  <zorder>label_16</zorder>
-  <zorder>label_15</zorder>
-  <zorder>pushButton_3</zorder>
-  <zorder>label</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>pushButton_2</zorder>
-  <zorder>pushButton_4</zorder>
-  <zorder>pushButton_5</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label_5</zorder>
-  <zorder>label_6</zorder>
-  <zorder>label_7</zorder>
-  <zorder>label_8</zorder>
-  <zorder>label_9</zorder>
-  <zorder>label_10</zorder>
-  <zorder>label_11</zorder>
-  <zorder>label_12</zorder>
-  <zorder>label_13</zorder>
-  <zorder>pushButton_6</zorder>
+  <zorder>background</zorder>
+  <zorder>backgroundZoomies</zorder>
+  <zorder>backgroundFeral</zorder>
+  <zorder>backgroundChonker</zorder>
+  <zorder>chonkerButton</zorder>
+  <zorder>gameTitle</zorder>
+  <zorder>backButton</zorder>
+  <zorder>infoButton</zorder>
+  <zorder>zoomiesButton</zorder>
+  <zorder>feralButton</zorder>
+  <zorder>labelZoomies</zorder>
+  <zorder>labelChonker</zorder>
+  <zorder>labelFeral</zorder>
+  <zorder>healthZoomies</zorder>
+  <zorder>damageZoomies</zorder>
+  <zorder>speedZoomies</zorder>
+  <zorder>speedChonker</zorder>
+  <zorder>healthChonker</zorder>
+  <zorder>damageChonker</zorder>
+  <zorder>speedFeral</zorder>
+  <zorder>healthFeral</zorder>
+  <zorder>damageFeral</zorder>
+  <zorder>playButton</zorder>
  </widget>
  <resources/>
  <connections/>

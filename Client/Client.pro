@@ -11,22 +11,28 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    gamewindow.cpp \
-    main.cpp \
     client.cpp \
-    responsehandler.cpp \
-    selectionwindow.cpp
+    gamewindow.cpp \
+    infopopupwindow.cpp \
+    main.cpp \
+    selectionwindow.cpp \
+    startingwindow.cpp \
+    winwindow.cpp
 
 HEADERS += \
     client.h \
     gamewindow.h \
-    responsehandler.h \
-    selectionwindow.h
+    infopopupwindow.h \
+    selectionwindow.h \
+    startingwindow.h \
+    winwindow.h
 
 FORMS += \
-    client.ui \
     gamewindow.ui \
-    selectionwindow.ui
+    infopopupwindow.ui \
+    selectionwindow.ui \
+    startingwindow.ui \
+    winwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
